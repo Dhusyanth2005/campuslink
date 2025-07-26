@@ -7,6 +7,7 @@ import StudentDashboard from './pages/StudentDashboardPage';
 import LoginPage from './pages/LoginPage';
 import AdminDashboardPage from './pages/AdminDashboardPage';
 import AnnouncementPostPage from './pages/AnnouncementPostPage';
+import ChatBot from './components/Home/ChatBot';
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
           <Route path="/announcements" element={<AnnouncementPostPage />} />
           <Route path="/login"  element={<LoginPage/>}/>
         </Routes>
+        <ChatBot/>
       </div>
+
     </Router>
   );
 }
