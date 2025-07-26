@@ -1,17 +1,20 @@
-import  { useState } from 'react';
+import React, { useState } from 'react';
 import { 
   AlertCircle, 
   Search, 
   Calendar, 
   Settings, 
   Users, 
-  Newspaper,  
+  Newspaper,
+ 
 } from 'lucide-react';
 import Header from '../components/Home/Header';
 import Hero from '../components/Home/HeroSection';
 import Features from '../components/Home/Features';
 import Announcements from '../components/Home/Announcements';
 import Footer from '../components/Home/Footer';
+import ChatBot from '../components/Home/ChatBot';
+
 
 const Homepage = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -68,8 +71,10 @@ const Homepage = () => {
       <Hero stats={stats} />
       <Features features={features} />
       <Announcements />
-      
       <Footer />
+      
+      {/* Floating Chatbot */}
+      <ChatBot />
     </div>
   );
 };
